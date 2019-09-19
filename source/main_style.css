@@ -89,15 +89,35 @@ svg {margin-top: -10px; position: fixed; z-index: 2; left:-8px;}
 
 /*사건 상세 분석*/
 #dP_arrange{font-family: "Noto Serif KR", serif; font-size:1.1vw; color: white; top:6000px; width: 9vw; height: 2.0vw; margin:auto; left: 26%; position: absolute; text-align: left; border-bottom: 0.5px solid gray;}
-#dP1{font-family: "Noto Serif KR", serif; font-size:1.0vw; color: white; top:7100px; width: 15vw; height: 2.0vw; margin:auto; left: 21%; position: absolute; text-align: center; border-bottom: 0.5px solid gray;}
-#dP2{font-family: "Noto Serif KR", serif; font-size:1.0vw; color: white; top:7100px; width: 13vw; height: 2.0vw; margin:auto; left: 43%; position: absolute; text-align: center; border-bottom: 0.5px solid gray;}
-#dP3{font-family: "Noto Serif KR", serif; font-size:1.0vw; color: white; top:7100px; width: 13vw; height: 2.0vw; margin:auto; left: 65%; position: absolute; text-align: center; border-bottom: 0.5px solid gray;}
-#dP1picture{display: block; top:2227px; width: 220px; height: 276px; left: -21.5%; position: relative; margin: auto; opacity: 0.7;}
-#dP2picture{display: block; top:1951px; width: 220px; height: 276px; left: -0.4%; position: relative; margin: auto; opacity: 0.7;}
-#dP3picture{display: block; top:1675px; width: 220px; height: 276px; left: 21.7%; position: relative; margin: auto; opacity: 0.7;}
+#dP1{font-family: "Noto Serif KR", serif; font-size:1.0vw; color: white; top:7100px; width: 15vw; height: 1.9vw; margin:auto; left: 21%; position: absolute; text-align: center; overflow:hidden; white-space:nowrap; border-bottom: 0.5px solid gray; transition: all 0.5s; animation: move3 0.6s linear forwards;}
+#dP2{font-family: "Noto Serif KR", serif; font-size:1.0vw; color: white; top:7100px; width: 13vw; height: 1.9vw; margin:auto; left: 43%; position: absolute; text-align: center; overflow:hidden; white-space:nowrap; border-bottom: 0.5px solid gray; transition: all 0.5s; animation: move3 0.6s linear forwards;}
+#dP3{font-family: "Noto Serif KR", serif; font-size:1.0vw; color: white; top:7100px; width: 13vw; height: 1.9vw; margin:auto; left: 65%; position: absolute; text-align: center; overflow:hidden; white-space:nowrap; border-bottom: 0.5px solid gray; transition: all 0.5s; animation: move3 0.6s linear forwards;}
+#dP1picture{display: block; top:2227px; width: 220px; height: 276px; left: -21.5%; position: relative; margin: auto; opacity: 0.7; transition: all 0.1s; animation: move4 1s 0.6s linear forwards;}
+#dP2picture{display: block; top:1951px; width: 220px; height: 276px; left: -0.4%; position: relative; margin: auto; opacity: 0.7; transition: all 0.1s; animation: move5 1s 0.6s linear forwards;}
+#dP3picture{display: block; top:1675px; width: 220px; height: 276px; left: 21.7%; position: relative; margin: auto; opacity: 0.7; transition: all 0.1s; animation: move6 1s 0.6s linear forwards;}
 #dP1Content{font-family: "Noto Serif KR", serif; font-size:0.8vw; color: white; top:7470px; width:600px; height: 36px; margin:auto; left: 19.2%; position: absolute; text-align: left; line-height:2.0;}
 #dP2Content{font-family: "Noto Serif KR", serif; font-size:0.8vw; color: white; top:7470px; width:600px; height: 36px; margin:auto; left: 40.5%; position: absolute; text-align: left; line-height:2.0;}
 #dP3Content{font-family: "Noto Serif KR", serif; font-size:0.8vw; color: white; top:7470px; width:600px; height: 36px; margin:auto; left: 62.5%; position: absolute; text-align: left; line-height:2.0;}
+
+@keyframes move3 {
+      from {width: 0;}
+      to {width: 15vw;}}
+
+@keyframes move4 {
+      from {opacity: 0; top:2247px;}
+      to {opacity:1; top:2227px;}}
+
+@keyframes move5 {
+      from {opacity: 0; top:1971px;}
+      to {opacity:1; top:1951px;}}
+
+@keyframes move6 {
+      from {opacity: 0; top:1695px;}
+      to {opacity:1; top:1675px;}}
+
+@keyframes move2 {
+      from {opacity:0; top:-1600px;}
+      to {opacity:1; top:-1635px;}}
 
 /*Montage*/
 #dP_detail{font-family: "Noto Serif KR", serif; font-size:1.1vw; color: white; top:7950px; width: 9vw; height: 2.0vw; margin:auto; left: 19.2%; position: absolute; text-align: left; border-bottom: 0.5px solid gray;}
