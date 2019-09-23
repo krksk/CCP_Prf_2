@@ -229,9 +229,24 @@
   <img id="susPicture" src="source/sus_1.PNG">
   <div id="sus_picture_sub">부산 유괴 살인 사건을 수사중인 본부. 밤과 낮이 따로 없다.</div>
   <div id="ending">결말</div>
-  <img id="endingPicture" src="source/endings.JPG">
+  <div><img src="source/endings.JPG" id="endingPicture"></div>
   <div id="ending_headline"><font color=#ff33333;>誘拐犯</font> 체포에 搜查力을 <font color=#ff33333;>총동원</font>하라.</div>
   <div id="monitor"></div>
+  <div id="endingPictureSub">[ 연달은 유괴사건으로 인해 어머니회 회원들이 어린이 놀이터를 찾았다. ]</div>
+  <div id="ending_sub">대통령까지 나선 희대의 살인사건</div>
+  <div id="ending_contents">
+  <ui>
+  <li>사건이 끝난지 4일이 지난 1975년 8월 28일, 당시 박정희 전 대통령은 정부와 여당 연석회의에서 "수사력을 총동원해서 어린이 유괴범을 조속히 체포토록하라"고 지시를 했을 정도로 당시 사건의 파급력은 어마어마했다.
+  <li>부산뿐만 아니라 전국적으로도 어린이 유괴 예방을 위해 동네 안 어린이 놀이터와 골목길등 등·하교 길목에 당번을 배치하는 등 사회적으로 경각심을 심어주었다.
+  <li>이에 경찰은 2만 여 명의 인력을 투입, 전국에 범인의 몽타주 수 만장이 배포되었다.
+  <li>이후 부산에서 어린이를 대상으로 한 범죄가 산발적으로 발생하였다. 수많은 용의자가 검거되었지만 몇 개의 사건을 제외하곤 모두 이 사건의 범인과는 무관한 것으로 밝혀졌으며 결국 1990년 8월 24일 공소시효가 만료되었다.
+  </li>
+  </ui>
+  </div>
+  <div><img src="source/ending_1.JPG" id="ending_Picture2"></div>
+  <div id="ending_picture2_sub">1975년 8월 29일자 경향신문 기사.</div>
+  <div id="ending_finale1">범인은 지금쯤 그때 당시의 사건을 비웃어대며</div>
+  <div id="ending_finale2">말년을 보내고 있을 것이다.</div>
 
 <script>
 //Profiling map
@@ -246,29 +261,29 @@
 	// 지도에 확대 축소 컨트롤을 생성한다
     var positions = [
 		    {
-                content: '<div>1975년 8월 18일 pm 11:00 <br> 부산직할시 서구 범천동 유괴현장 <br> 이정숙 양(5) 괴한에게 납치</div>',
+                content: '<div id="label2">1975년 8월 18일 pm 11:00 <br> 부산직할시 서구 범천동 유괴현장 <br> 이정숙 양(5) 괴한에게 납치</div>',
 		        latlng: new daum.maps.LatLng(35.150731, 129.049656)
 		    },
        		{
-                content: '<div>1975년 8월 18일 pm 03:00 <br> 부산직할시 서구 대신공원 <br> 어느 등산객에 의해 이정숙 양 발견 </div>',
+                content: '<div id="label2">1975년 8월 18일 pm 03:00 <br> 부산직할시 서구 대신공원 <br> 어느 등산객에 의해 이정숙 양 발견</div>',
 		        latlng: new daum.maps.LatLng(35.121814, 129.015727)
 		    },
         	{
-                content: '<div>1975년 8월 24일 pm 07:00 <br> 부산직할시 동구 좌천동 <br> 배준일 군(5) 실종 </div>',
+                content: '<div id="label2">1975년 8월 24일 pm 07:00 <br> 부산직할시 동구 좌천동 <br> 배준일 군(5) 실종 </div>',
 		        latlng: new daum.maps.LatLng(35.130825, 129.048856)
 		    },
         	{
-                content: '<div>1975년 8월 25일 am 06:00 <br> 부산직할시 서구 충무대로 <br> 생선상자 적재장에서 배준일 군 시신 발견 </div>',
+                content: '<div id="label2">1975년 8월 25일 am 06:00 <br> 부산직할시 서구 충무대로 <br> 생선상자 적재장에서 배준일 군 시신 발견 </div>',
 		        latlng: new daum.maps.LatLng(35.088615, 129.025189)
 		    },
         	{
-                content: '<div>1975년 8월 20일 pm 08:00 <br> 부산직할시 서구 장림동 <br> 핫도그를 사먹으러 갔던 김현정 양(7) 실종 </div>',
+                content: '<div id="label2">1975년 8월 20일 pm 08:00 <br> 부산직할시 서구 장림동 <br> 핫도그를 사먹으러 갔던 김현정 양(7) 실종 </div>',
 		        latlng: new daum.maps.LatLng(35.077313, 128.974870)
 		    },
         	{
-                content: '<div>1975년 8월 21일 pm 05:45 <br> 부산직할시 중구 동광동 용두산공원 <br> 공원 인근 숲 속에서 김현정 양 시신 발견 </div>',
+                content: '<div id="label2">1975년 8월 21일 pm 05:45 <br> 부산직할시 중구 동광동 용두산공원 <br> 공원 인근 숲 속에서 김현정 양 시신 발견 </div>',
 		        latlng: new daum.maps.LatLng(35.100315, 129.032861)
-		    },
+		    }
     ]
     for (var i = 0; i < positions.length; i ++) {
 		    // 마커를 생성합니다
@@ -303,6 +318,7 @@
 		    };
 		}
     	// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
+
 	var linePath = [
     new kakao.maps.LatLng(35.150731, 129.049656),
     new kakao.maps.LatLng(35.121814, 129.015727)
@@ -364,20 +380,80 @@ map1.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
 // 커스텀 오버레이에 표시할 내용입니다
 // HTML 문자열 또는 Dom Element 입니다
-var contentCO = '<div class ="label"><span class="left"></span><span class="center">총 거리 : 4,800m<br>도보 : 1시간 6분<br>자전거 : 19분</span><span class="right"></span></div>';
+var contentCO1 = '<div class ="label"><span class="left"></span><span class="center">총 거리 : 4,800m<br>도보 : 1시간 6분<br>차 : 19분</span><span class="right"></span></div>';
+var contentCO2 = '<div class ="label"><span class="left"></span><span class="center">총 거리 : 5,150m<br>도보 : 1시간 16분<br>차 : 22분</span><span class="right"></span></div>';
+var contentCO3 = '<div class ="label"><span class="left"></span><span class="center">총 거리 : 5,900m<br>도보 : 1시간 28분<br>차 : 25분</span><span class="right"></span></div>';
 
 // 커스텀 오버레이가 표시될 위치입니다
-var positionCO = new kakao.maps.LatLng(35.134705, 129.031191);
+var positionCO1 = new kakao.maps.LatLng(35.138705, 129.034091);
+var positionCO2 = new kakao.maps.LatLng(35.114174, 129.038935);
+var positionCO3 = new kakao.maps.LatLng(35.088309, 129.004671);
 
 // 커스텀 오버레이를 생성합니다
 var customOverlay = new kakao.maps.CustomOverlay({
-    position: positionCO,
-    content: contentCO
+    position: positionCO1,
+    content: contentCO1
+});
+
+var customOverlay2 = new kakao.maps.CustomOverlay({
+    position: positionCO2,
+    content: contentCO2
+});
+
+var customOverlay3 = new kakao.maps.CustomOverlay({
+    position: positionCO3,
+    content: contentCO3
 });
 
 // 커스텀 오버레이를 지도에 표시합니다
 customOverlay.setMap(map1);
+customOverlay2.setMap(map1);
+customOverlay3.setMap(map1);
 
+// 지도에 표시할 원을 생성합니다
+var circle1 = new kakao.maps.Circle({
+    center : new kakao.maps.LatLng(35.150731, 129.049656),  // 원의 중심좌표 입니다
+    radius: 4460, // 미터 단위의 원의 반지름입니다
+    strokeWeight: 1, // 선의 두께입니다
+    strokeColor: '#75B8FA', // 선의 색깔입니다
+    strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+    strokeStyle: 'linear', // 선의 스타일 입니다
+    fillColor: '#CFE7FF', // 채우기 색깔입니다
+    fillOpacity: 0.3  // 채우기 불투명도 입니다
+});
+
+// 지도에 원을 표시합니다
+circle1.setMap(map1);
+
+// 지도에 표시할 원을 생성합니다
+var circle2 = new kakao.maps.Circle({
+    center : new kakao.maps.LatLng(35.130825, 129.048856),  // 원의 중심좌표 입니다
+    radius: 5160, // 미터 단위의 원의 반지름입니다
+    strokeWeight: 1, // 선의 두께입니다
+    strokeColor: '#75B8FA', // 선의 색깔입니다
+    strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+    strokeStyle: 'linear', // 선의 스타일 입니다
+    fillColor: '#CFE7FF', // 채우기 색깔입니다
+    fillOpacity: 0.3  // 채우기 불투명도 입니다
+});
+
+// 지도에 원을 표시합니다
+circle2.setMap(map1);
+
+// 지도에 표시할 원을 생성합니다
+var circle3 = new kakao.maps.Circle({
+    center : new kakao.maps.LatLng(35.077313, 128.974870),  // 원의 중심좌표 입니다
+    radius: 5880, // 미터 단위의 원의 반지름입니다
+    strokeWeight: 1, // 선의 두께입니다
+    strokeColor: '#75B8FA', // 선의 색깔입니다
+    strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+    strokeStyle: 'linear', // 선의 스타일 입니다
+    fillColor: '#CFE7FF', // 채우기 색깔입니다
+    fillOpacity: 0.3  // 채우기 불투명도 입니다
+});
+
+// 지도에 원을 표시합니다
+circle3.setMap(map1);
 
 
 
@@ -412,16 +488,16 @@ var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
           latlng: new daum.maps.LatLng(35.170099, 129.137907)
       }
   ]
-  for (var i = 0; i < positions.length; i ++) {
+  for (var i = 0; i < positions2.length; i ++) {
       // 마커를 생성합니다
       var marker2 = new daum.maps.Marker({
           map: map2, // 마커를 표시할 지도
-          position: positions[i].latlng // 마커의 위치
+          position: positions2[i].latlng // 마커의 위치
       });
 
       // 마커에 표시할 인포윈도우를 생성합니다
       var infowindow2 = new daum.maps.InfoWindow({
-          content: positions[i].content // 인포윈도우에 표시할 내용
+          content: positions2[i].content // 인포윈도우에 표시할 내용
       });
 
       // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
@@ -503,6 +579,57 @@ map2.addControl(mapTypeControl2, kakao.maps.ControlPosition.TOPRIGHT);
 var zoomControl2 = new kakao.maps.ZoomControl();
 map2.addControl(zoomControl2, kakao.maps.ControlPosition.RIGHT);
 map2.addControl(zoomControl2, kakao.maps.ControlPosition.RIGHT);
+</script>
+
+<script>
+//Navigation
+topb.onmouseover = function(){
+  topb.style.cursor = "pointer";
+  }
+
+introduce.onmouseover = function(){
+  introduce.style.cursor = "pointer";
+  }
+
+develop.onmouseover = function(){
+  develop.style.cursor = "pointer";
+  }
+
+analysis.onmouseover = function()
+  {analysis.style.cursor = "pointer";
+  }
+
+doubt.onmouseover = function(){
+  doubt.style.cursor = "pointer";
+  }
+
+now.onmouseover = function(){
+  now.style.cursor = "pointer";
+  }
+
+topb.onclick = function(){
+window.scrollBy({ top: -10000, behavior: 'smooth' });
+  }
+
+introduce.onclick = function(){
+  document.getElementById('enter').scrollIntoView();
+  }
+
+develop.onclick = function(){
+  document.getElementById('unfold').scrollIntoView();
+  }
+
+analysis.onclick = function(){
+  document.getElementById('profiling').scrollIntoView();
+  }
+
+doubt.onclick = function(){
+  document.getElementById('suspicion').scrollIntoView();
+  }
+
+now.onclick = function(){
+  document.getElementById('ending').scrollIntoView();
+  }
 </script>
 </body>
 </html>
