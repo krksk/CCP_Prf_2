@@ -30,6 +30,9 @@ window.onscroll = function(){
     }if(t>10000){
     ending_headline.style.animationPlayState = "running";
     endingPicture.style.animationPlayState = "running";
+    }if(t>12200){
+    ending_finale1.style.animationPlayState = "running";
+    ending_finale2.style.animationPlayState = "running";
     }
     monitor.innerHTML = t + "px";
     }
