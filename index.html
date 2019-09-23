@@ -472,19 +472,19 @@ var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
 // 지도에 확대 축소 컨트롤을 생성한다
   var positions2 = [
       {
-              content: '<div>1975년 8월 24일 pm 05:40경<br>부산직할시 동구 좌천동 760(준일군 집과 가까움)<br> 집 앞에 놀고 있던 한 모군(10)을 30세 가량 남자가<br> 연필깎이 칼로 위협해 납치하려했지만 실패</div>',
+              content: '<div id="label2">1975년 8월 24일 pm 05:40경<br>부산직할시 동구 좌천동 760(준일군 집과 가까움)<br> 집 앞에 놀고 있던 한 모군(10)을 30세 가량 남자가<br> 연필깎이 칼로 위협해 납치하려했지만 실패</div>',
           latlng: new daum.maps.LatLng(35.135583, 129.053039)
       },
         {
-              content: '<div>1975년 8월 25일 am 11:00 <br> 부산직할시 진구 가야1동 가야국민교 뒷산 중턱<br> 동생과 메뚜기를 잡고 놀던 최 모양(10)을 30대 남자가 끌고 가 성추행 </div>',
+              content: '<div id="label2">1975년 8월 25일 am 11:00 <br> 부산직할시 진구 가야1동 가야국민교 뒷산 중턱<br> 동생과 메뚜기를 잡고 놀던 최 모양(10)을 30대 남자가 끌고 가 성추행 </div>',
           latlng: new daum.maps.LatLng(35.150334, 129.039746)
       },
         {
-              content: '<div>1975년 8월 26일 pm 02:00 <br> 부산직할시 동구 수정2동 856<br> 이 모양(9)이 집 앞에서 30세 가량의 남자에게 끌려다가 외할머니에 의해 구출 </div>',
+              content: '<div id="label2">1975년 8월 26일 pm 02:00 <br> 부산직할시 동구 수정2동 856<br> 이 모양(9)이 집 앞에서 30세 가량의 남자에게 끌려다가 외할머니에 의해 구출 </div>',
           latlng: new daum.maps.LatLng(35.128589, 129.044144)
       },
         {
-              content: '<div>1975년 8월 28일 am 10:00 <br> 부산직할시 동래구 우2동 <br> 어떤 남자가 7세 남아를 엄마가 부른다며 데리고 가다 이웃사람이 알아보자 도망 </div>',
+              content: '<div id="label2">1975년 8월 28일 am 10:00 <br> 부산직할시 동래구 우2동 <br> 어떤 남자가 7세 남아를 엄마가 부른다며 데리고 가다 이웃사람이 알아보자 도망 </div>',
           latlng: new daum.maps.LatLng(35.170099, 129.137907)
       }
   ]
@@ -510,14 +510,14 @@ var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
   // 인포윈도우를 표시하는 클로저를 만드는 함수입니다
   function makeOverListener(map2, marker2, infowindow2) {
       return function() {
-          infowindow.open(map2, marker2);
+          infowindow2.open(map2, marker2);
       };
   }
 
   // 인포윈도우를 닫는 클로저를 만드는 함수입니다
   function makeOutListener(infowindow2) {
       return function() {
-          infowindow.close();
+          infowindow2.close();
       };
   }
     // 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
@@ -580,6 +580,11 @@ var zoomControl2 = new kakao.maps.ZoomControl();
 map2.addControl(zoomControl2, kakao.maps.ControlPosition.RIGHT);
 map2.addControl(zoomControl2, kakao.maps.ControlPosition.RIGHT);
 </script>
+
+
+
+
+
 
 <script>
 //Navigation
