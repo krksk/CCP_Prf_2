@@ -70,7 +70,7 @@ svg {margin-top: -10px; position: fixed; z-index: 2; left:-8px;}
   		to {width: 33.3em; border-right: 0em;}}
   	@keyframes typing4 {
   	  from {width: 0; border-right: 0em;}
-  		to {width: 32.5em;}}
+  		to {width: 32.9em;}}
   	@keyframes blink-caret {
   	  from, to {border-color: #cccccc}
   		50% {border-color: #000;}}

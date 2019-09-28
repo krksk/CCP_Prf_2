@@ -7,30 +7,16 @@ window.onscroll = function(){
     a3.style.animationPlayState = "running";
     a4.style.animationPlayState = "running";
     field.style.animationPlayState = "running";
-    }if(t>800){
-    introduce.style.animationPlayState = "running";
-    develop.style.animationPlayState = "paused";
-    analysis.style.animationPlayState = "paused";
-    doubt.style.animationPlayState = "paused";
-    now.style.animationPlayState = "paused";
-    }if(t>1900){
-    introduce.style.animationPlayState = "paused";
-    }if(t>4800){
-    analysis.style.animationPlayState = "running";
-    }if(t>8500){
-    doubt.style.animationPlayState = "running";
-    }if(t>10750){
-    now.style.animationPlayState = "running";
-    }if(t>5000){
+    }if(t>5500){
     dP_montage_headline.style.animationPlayState = "running";
     dP_headline_Picture.style.animationPlayState = "running";
-    }if(t>7800){
+  }if(t>8600){
     suspicion_substance1.style.animationPlayState = "running";
     suspicion_substance2.style.animationPlayState = "running";
-    }if(t>10000){
+  }if(t>11000){
     ending_headline.style.animationPlayState = "running";
     endingPicture.style.animationPlayState = "running";
-    }if(t>12200){
+  }if(t>13100){
     ending_finale1.style.animationPlayState = "running";
     ending_finale2.style.animationPlayState = "running";
     }
