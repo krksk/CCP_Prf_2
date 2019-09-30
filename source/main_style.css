@@ -1,21 +1,26 @@
 /*Main Style*/
 body { background-color: #111111;}
-@font-face {font-family:'minimalhard2'; src:url(source/mh2_.ttf) format('truetype');}
+@font-face {font-family:'minimalhard2'; src:url(source/minimalhard2_.ttf) format('truetype');}
 
 #logo_type{top:20px; left:4%; z-index: 3; position: fixed;}
 #logoSpread{font-family: "minimalhard2"; font-weight: bolder; font-size: 1.0vw; position: fixed; color: white; z-index: 3; top: 25px; padding: 0.1vw 2vw 0.1vw 0.1vw; opacity: 0; left: 6%; visibility: hidden; transition: all 0.15s ease-in; width:400px; }
 #logo_type:hover #logoSpread {opacity: 1; left: 7%; visibility: visible;}
 
 #nav_menu{position: fixed; margin-top: 14px;}
-#nav_menu {margin-left: 78%; z-index: 3;}
+#nav_menu {margin-left: 71%; z-index: 3;}
 #nav_menu tr {color:white;}
-#nav_menu tr th {font-family: "minimalhard2"; font-weight: lighter; font-size: 1.0vw; padding: 0.1vw 2vw 0.1vw 0.1vw;}
+#nav_menu tr th {font-family: "minimalhard2"; font-weight: lighter; font-size: 1.0vw; padding: 0.1vw 2vw 0.1vw 0.1vw; transition: all 0.2s ease-in;}
 svg {margin-top: -10px; position: fixed; z-index: 2; left:-8px;}
 
 #nav_menu tr > #menu1:hover #sub-menu {opacity: 1; visibility: visible;}
-#sub-menu {position: absolute; background: #222222; opacity: 0; visibility: hidden; transition: all 0.15s ease-in; font-family: "Noto Serif KR", serif; font-size: 0.8vw;}
+#sub-menu {position: absolute; background: #222222; opacity: 0; visibility: hidden; transition: all 0.2s ease-in; font-family: "Noto Serif KR", serif; font-size: 0.8vw;}
 #sub-menu > li {padding: 20px 25px; border-bottom: 1px solid #222222;}
 #sub-menu > li >  a {color: rgba(255,255,255,0.6); text-decoration: none;}
+
+#menu1:hover {text-decoration: underline;}
+#menu2:hover {text-decoration: underline;}
+#menu3:hover {text-decoration: underline;}
+#menu4:hover {text-decoration: underline;}
 
 #monitor {top: 25px; width: 100px; height: 40px; background: red; position: fixed; right: 0px; line-height: 40px; color: white; z-index: 5; }
 
@@ -82,7 +87,7 @@ svg {margin-top: -10px; position: fixed; z-index: 2; left:-8px;}
 #profiling{font-family: "Noto Serif KR", serif; font-size:1.5vw; color: #cccccc; top:4900px; width: 12vw; height: 2.5vw; margin:auto; left: 24%; position: absolute; text-align: left; border-bottom: 0.5px solid gray;}
 
 /*Profiling map*/
-#map1{position:relative; display: block; margin: auto; width:1500px; height:900px; top:1020px; /*animation: map_spread 2s linear forwards paused;*/}
+#map1{position:relative; display: block; margin: auto; width:1500px; height:900px; top:1020px;  /*animation: map_spread 2s linear forwards paused;*/}
 #mapSub{font-family: "Noto Serif KR", serif; font-size:0.7vw; color: #cccccc; top:1035px; width: 600px; height: 80px; margin:auto; position: relative; text-align: center;}
 .label {font-family: "Noto Serif KR", serif; background-color:white; font-size:12px; padding:5px;}
 #label2 {font-family: "Noto Serif KR", serif; background-color:white; font-size:12px; padding:5px;}
